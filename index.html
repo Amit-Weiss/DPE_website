@@ -22,7 +22,6 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- Custom styles for this template -->
-    <!-- <link href="css/agency.min.css" rel="stylesheet"> -->
     <link href="css/agency.css" rel="stylesheet">
 
   </head>
@@ -85,10 +84,11 @@
               <p class="text">DPE is a proposed solution for Super Resolution and Artifact Reduction on low resolution images. </p>
                 <p class="text">
                 Current neural networks for super resolution, such as <a href="https://arxiv.org/abs/1707.02921">EDSR</a>, have shown good results in performing super resolution,
-                but they do not tackle the issue of artifact reduction. We suggested that by fine-tuning existing networks we will also be able to perform artifact reduction.
+                but they do not tackle the issue of artifact reduction. We suggested that by fine-tuning existing networks we will also be able to perform artifact reduction and
+                acheive good results in both aspects
               </p>
               <p class="text">
-                This project was done on semester Winter 2018-2019, as an industrial project (234313)
+                This project was conducted on semester Winter 2018-2019, as an industrial project (234313)
               </p>
             </div>
           </div>
@@ -101,7 +101,7 @@
              </div>
               <div class="col-md-2">
                   <span class="fa-stack fa-4x">
-                    <img src="img/logos/shutterfly-Logo.png" alt="Technion" height="60" width="150">
+                    <img src="img/logos/shutterfly-Logo.png" alt="Shutterfly" height="60" width="150">
                   </span>
             </div>
             <div class="col-md-4"></div>
@@ -159,6 +159,11 @@
               <p class="text">
               In order to be able to perform both Super Resolution and Artifact Reduction on low quality images, we have decided to use an existing network and modify it.
               We took the <a href="https://github.com/thstkdgus35/EDSR-PyTorch">EDSR PyTorch Implementation</a> and trained it with a custom dataset we created after researching what would help it perform best.
+
+              <p>Using the <a href="https://data.vision.ee.ethz.ch/cvl/DIV2K/">DIV2K</a> dataset, we built a training set that included downscaled images that were saved in different formats, when some formats suffer
+                from artifacts.</p>
+
+              <p>We tested our performance comparing to a simple upscaling of the low resolution images. The images we used for testing are the validation set of DIV2K (images 0801-900). </p>
             </p>
           </div>
         </div>
@@ -231,7 +236,6 @@
 
             </div>
             <div class="row">
-              <!-- <div class="col-lg-2"></div> -->
               <div class="col-lg-12">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 
@@ -297,8 +301,8 @@
 
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Examples</h2>
-            <h3 class="section-subheading text-muted">A view into some of our images</h3>
+            <h2 class="section-heading text-uppercase" style="color: white;">Examples</h2>
+            <h3 class="section-subheading" style="color: white;">A view into some of our images</h3>
           </div>
         </div>
 
