@@ -156,15 +156,20 @@
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Methodology</h2>
             <h3 class="section-subheading text">How did we plan to do it?</h3>
+
               <p class="text">
-              In order to be able to perform both Super Resolution and Artifact Reduction on low quality images, we have decided to use an existing network and modify it.
-              We took the <a href="https://github.com/thstkdgus35/EDSR-PyTorch">EDSR PyTorch Implementation</a> and trained it with a custom dataset we created after researching what would help it perform best.
+                In order to be able to perform both Super Resolution and Artifact Reduction on low quality images, we have decided to use an existing network and modify it.
+                We took the <a href="https://github.com/thstkdgus35/EDSR-PyTorch">EDSR PyTorch Implementation</a> and trained it with a custom dataset we created after researching what would help it perform best.
+              </p>
 
-              <p>Using the <a href="https://data.vision.ee.ethz.ch/cvl/DIV2K/">DIV2K</a> dataset, we built a training set that included downscaled images that were saved in different formats, when some formats suffer
-                from artifacts.</p>
+              <p class="text"> Using the <a href="https://data.vision.ee.ethz.ch/cvl/DIV2K/">DIV2K</a> dataset, we built a training set that included downscaled images that were saved in different formats.
+                Some of these formats suffer from artifacts.
+              </p>
 
-              <p>We tested our performance comparing to a simple upscaling of the low resolution images. The images we used for testing are the validation set of DIV2K (images 0801-900). </p>
-            </p>
+              <p class="text">
+                We tested our performance comparing to a simple upscaling of the low resolution images. The images we used for testing are the validation set of DIV2K (images 0801-900). 
+              </p>
+
           </div>
         </div>
     </section>
@@ -231,7 +236,7 @@
             
             <div class="row">
                 <div class="col-lg-12">
-                    <h5 class="carousel-heading text-muted">Histograms of improvements of our validation sets</h5>
+                    <h5 class="carousel-heading text-muted">Histograms of improvements of our validation set</h5>
                 </div>
 
             </div>
@@ -525,19 +530,8 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <span class="copyright">Copyright &copy; Amit Weiss, Michael Novitski 2019</span>
-          </div>
-      
-          <!-- <div class="col-md-4">
-            <ul class="list-inline quicklinks">
-              <li class="list-inline-item">
-                <a href="#">Privacy Policy</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">Terms of Use</a>
-              </li>
-            </ul>
-          </div> -->
+            <span class="copyright">Copyright &copy; Amit Weiss, Michael Novitsky 2019</span>
+          </div>    
         </div>
       </div>
     </footer>
